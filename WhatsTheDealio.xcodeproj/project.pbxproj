@@ -43,6 +43,7 @@
 		B84081622C56398A0030EE70 /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B840814E2C56398A0030EE70 /* Outfit-SemiBold.ttf */; };
 		B84081632C56398A0030EE70 /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B840814F2C56398A0030EE70 /* Outfit-Thin.ttf */; };
 		B84081682C563AE40030EE70 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081672C563AE40030EE70 /* Font+Extensions.swift */; };
+		B840816A2C563D290030EE70 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081692C563D290030EE70 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		B840814F2C56398A0030EE70 /* Outfit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Thin.ttf"; sourceTree = "<group>"; };
 		B84081642C563A2E0030EE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B84081672C563AE40030EE70 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		B84081692C563D290030EE70 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				B84081672C563AE40030EE70 /* Font+Extensions.swift */,
+				B84081692C563D290030EE70 /* Bundle+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				B84081212C562A8C0030EE70 /* Boostrap.swift in Sources */,
 				B840810E2C55F71B0030EE70 /* WhatsTheDealioApp.swift in Sources */,
 				B84081362C562ED70030EE70 /* NavigationDestinationViewFactory.swift in Sources */,
+				B840816A2C563D290030EE70 /* Bundle+Extensions.swift in Sources */,
 				B84081272C562C9F0030EE70 /* TabItem.swift in Sources */,
 				B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */,
 				B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */,

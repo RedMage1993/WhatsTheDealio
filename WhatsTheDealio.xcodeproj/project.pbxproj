@@ -49,6 +49,7 @@
 		B84081712C5640930030EE70 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081702C5640930030EE70 /* URL+Extensions.swift */; };
 		B84081752C5641DF0030EE70 /* DeeplinkRegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081742C5641DF0030EE70 /* DeeplinkRegexMatcher.swift */; };
 		B84081782C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */; };
+		B840817A2C5645210030EE70 /* DisabledRedirectURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081792C5645210030EE70 /* DisabledRedirectURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		B84081702C5640930030EE70 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		B84081742C5641DF0030EE70 /* DeeplinkRegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkRegexMatcher.swift; sourceTree = "<group>"; };
 		B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailDeeplinkRegexMatcher.swift; sourceTree = "<group>"; };
+		B84081792C5645210030EE70 /* DisabledRedirectURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledRedirectURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				B84081332C562EBD0030EE70 /* NavigationCoordinator.swift */,
 				B84081352C562ED70030EE70 /* NavigationDestinationViewFactory.swift */,
 				B840813B2C56312C0030EE70 /* ListController.swift */,
+				B84081792C5645210030EE70 /* DisabledRedirectURLSession.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				B840810E2C55F71B0030EE70 /* WhatsTheDealioApp.swift in Sources */,
 				B84081362C562ED70030EE70 /* NavigationDestinationViewFactory.swift in Sources */,
 				B840816A2C563D290030EE70 /* Bundle+Extensions.swift in Sources */,
+				B840817A2C5645210030EE70 /* DisabledRedirectURLSession.swift in Sources */,
 				B84081272C562C9F0030EE70 /* TabItem.swift in Sources */,
 				B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */,
 				B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */,

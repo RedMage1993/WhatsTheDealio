@@ -10,14 +10,16 @@ import Foundation
 @Observable
 class DeeplinkManager {
     private let appScheme: String
+    private let hostName: String
     private let regexMatchers: [DeeplinkRegexMatcher]
     
     private(set) var deeplink: Deeplink?
 
     private let deeplinkConsumer = Consumer()
     
-    init(appScheme: String, regexMatchers: [DeeplinkRegexMatcher]) {
+    init(appScheme: String, hostName: String, regexMatchers: [DeeplinkRegexMatcher]) {
         self.appScheme = appScheme
+        self.hostName = hostName
         self.regexMatchers = regexMatchers
     }
 
@@ -27,7 +29,22 @@ class DeeplinkManager {
 
     func parseURL(_ url: URL) async throws {
         let modifiedURL = url.scheme == appScheme ? url.movingHostToPath() : url
-        self.deeplink = matchDeeplink(in: modifiedURL)
+
+        if modifiedURL.scheme?.hasPrefix("http") == true {
+            self.deeplink = try await processHTTPURL(modifiedURL)
+        } else {
+            self.deeplink = matchDeeplink(in: modifiedURL)
+        }
+    }
+
+    private func processHTTPURL(_ url: URL) async throws -> Deeplink? {
+        let deepLink = matchDeeplink(in: url)
+
+        guard deepLink == nil else { return deepLink }
+
+        let redirectedURL = try await url.checkForRedirect(hostName: hostName)
+
+        return try await processHTTPURL(redirectedURL)
     }
 
     private func matchDeeplink(in url: URL) -> Deeplink? {

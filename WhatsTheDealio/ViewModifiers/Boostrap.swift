@@ -12,6 +12,7 @@ struct Bootstrap: ViewModifier {
     @State private var tabController = TabController()
     @State private var deeplinkManager = DeeplinkManager(
         appScheme: "dealio",
+        hostName: "fritzammon.com",
         regexMatchers: [DealDetailDeeplinkRegexMatcher()]
     )
     

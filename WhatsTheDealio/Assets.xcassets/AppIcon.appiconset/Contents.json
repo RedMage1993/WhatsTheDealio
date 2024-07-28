@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "fa_tilt.png",
+      "filename" : "fa_inverted.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

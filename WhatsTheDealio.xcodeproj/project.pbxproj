@@ -11,6 +11,7 @@
 		B84081102C55F71B0030EE70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840810F2C55F71B0030EE70 /* ContentView.swift */; };
 		B84081122C55F7230030EE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84081112C55F7230030EE70 /* Assets.xcassets */; };
 		B84081152C55F7230030EE70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84081142C55F7230030EE70 /* Preview Assets.xcassets */; };
+		B840811D2C55F9840030EE70 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B840811C2C55F9840030EE70 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B840811D2C55F9840030EE70 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = WhatsTheDealio;
+			packageProductDependencies = (
+				B840811C2C55F9840030EE70 /* Networking */,
+			);
 			productName = WhatsTheDealio;
 			productReference = B840810A2C55F71B0030EE70 /* WhatsTheDealio.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B84081012C55F71B0030EE70;
+			packageReferences = (
+				B840811B2C55F9840030EE70 /* XCRemoteSwiftPackageReference "Networking" */,
+			);
 			productRefGroup = B840810B2C55F71B0030EE70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B840811B2C55F9840030EE70 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RedMage1993/Networking";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B840811C2C55F9840030EE70 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B840811B2C55F9840030EE70 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B84081022C55F71B0030EE70 /* Project object */;
 }

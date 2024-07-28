@@ -1,0 +1,15 @@
+{
+  "originHash" : "c32ab3135a9dda26fa9d60d6399a4d3888b9f383e15d433b490fdf05aaed4474",
+  "pins" : [
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RedMage1993/Networking",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9881eb62e1724758e27fb562e085edb4413f62cc"
+      }
+    }
+  ],
+  "version" : 3
+}

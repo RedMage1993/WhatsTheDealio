@@ -10,10 +10,22 @@ import SwiftUI
 
 struct Bootstrap: ViewModifier {
     @State private var tabController = TabController()
+    @State private var deeplinkManager = DeeplinkManager(
+        appScheme: "dealio",
+        regexMatchers: [DealDetailDeeplinkRegexMatcher()]
+    )
     
     func body(content: Self.Content) -> some View {
         content
             .environment(tabController)
+            .environment(deeplinkManager)
+            .onOpenURL(perform: openURL)
+    }
+    
+    func openURL(_ url: URL) {
+        Task {
+            try await deeplinkManager.parseURL(url)
+        }
     }
 }
 

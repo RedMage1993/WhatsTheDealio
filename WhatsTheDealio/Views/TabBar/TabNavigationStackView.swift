@@ -14,6 +14,7 @@ struct TabNavigationStackView<Root: View>: View {
 
     @State private var tabNavigationCoordinator = NavigationCoordinator(navigationDestinationViewFactory: TabNavigationDestinationViewFactory())
     @State private var listController = ListController()
+    @Environment(DeeplinkManager.self) private var deeplinkManager
     @Environment(TabController.self) private var tabController
 
     init(tab: TabItem, content: () -> Root) {
@@ -41,5 +42,19 @@ struct TabNavigationStackView<Root: View>: View {
         }
         .environment(tabNavigationCoordinator)
         .environment(listController)
+        .onChange(of: deeplinkManager.deeplink) {
+            Task { @MainActor in
+                guard tabController.selectedTab == tab else { return }
+
+                await deeplinkManager.consumeDeeplink {
+                    switch $0 {
+                    case .dealDetail(let id):
+                        tabNavigationCoordinator.push(.dealDetail(id))
+                    }
+
+                    return true
+                }
+            }
+        }
     }
 }

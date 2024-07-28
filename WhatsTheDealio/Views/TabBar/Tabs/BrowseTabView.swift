@@ -10,6 +10,8 @@ import SwiftUI
 
 struct BrowseTabView: View {
     var body: some View {
-        Text("Browse")
+        TabNavigationStackView(tab: .browse) {
+            Text("Browse")
+        }
     }
 }

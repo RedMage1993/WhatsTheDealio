@@ -10,6 +10,8 @@ import SwiftUI
 
 struct DealsTabView: View {
     var body: some View {
-        Text("Deals")
+        TabNavigationStackView(tab: .deals) {
+            Text("Deals")
+        }
     }
 }

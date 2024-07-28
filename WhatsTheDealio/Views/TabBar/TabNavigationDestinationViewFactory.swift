@@ -11,7 +11,7 @@ import SwiftUI
 struct TabNavigationDestinationViewFactory: NavigationDestinationViewFactory {
     func view(for destination: TabNavigationDestination) -> some View {
         switch destination {
-        case .detail(let id):
+        case .dealDetail(let id):
             Text("Deal Detail for \(id)")
         }
     }

@@ -44,6 +44,11 @@
 		B84081632C56398A0030EE70 /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B840814F2C56398A0030EE70 /* Outfit-Thin.ttf */; };
 		B84081682C563AE40030EE70 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081672C563AE40030EE70 /* Font+Extensions.swift */; };
 		B840816A2C563D290030EE70 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081692C563D290030EE70 /* Bundle+Extensions.swift */; };
+		B840816C2C563E5B0030EE70 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840816B2C563E5B0030EE70 /* DeeplinkManager.swift */; };
+		B840816F2C563E810030EE70 /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840816E2C563E810030EE70 /* Deeplink.swift */; };
+		B84081712C5640930030EE70 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081702C5640930030EE70 /* URL+Extensions.swift */; };
+		B84081752C5641DF0030EE70 /* DeeplinkRegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081742C5641DF0030EE70 /* DeeplinkRegexMatcher.swift */; };
+		B84081782C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +90,11 @@
 		B84081642C563A2E0030EE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B84081672C563AE40030EE70 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		B84081692C563D290030EE70 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		B840816B2C563E5B0030EE70 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		B840816E2C563E810030EE70 /* Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplink.swift; sourceTree = "<group>"; };
+		B84081702C5640930030EE70 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		B84081742C5641DF0030EE70 /* DeeplinkRegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkRegexMatcher.swift; sourceTree = "<group>"; };
+		B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailDeeplinkRegexMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,7 @@
 		B84081322C562EB00030EE70 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B840816D2C563E690030EE70 /* DeeplinkManager */,
 				B84081332C562EBD0030EE70 /* NavigationCoordinator.swift */,
 				B84081352C562ED70030EE70 /* NavigationDestinationViewFactory.swift */,
 				B840813B2C56312C0030EE70 /* ListController.swift */,
@@ -243,8 +254,28 @@
 			children = (
 				B84081672C563AE40030EE70 /* Font+Extensions.swift */,
 				B84081692C563D290030EE70 /* Bundle+Extensions.swift */,
+				B84081702C5640930030EE70 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B840816D2C563E690030EE70 /* DeeplinkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B84081762C5641F50030EE70 /* DeeplinkRegexMatcher */,
+				B840816B2C563E5B0030EE70 /* DeeplinkManager.swift */,
+				B840816E2C563E810030EE70 /* Deeplink.swift */,
+			);
+			path = DeeplinkManager;
+			sourceTree = "<group>";
+		};
+		B84081762C5641F50030EE70 /* DeeplinkRegexMatcher */ = {
+			isa = PBXGroup;
+			children = (
+				B84081742C5641DF0030EE70 /* DeeplinkRegexMatcher.swift */,
+				B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */,
+			);
+			path = DeeplinkRegexMatcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84081382C562F170030EE70 /* TabNavigationDestinationViewFactory.swift in Sources */,
+				B840816C2C563E5B0030EE70 /* DeeplinkManager.swift in Sources */,
 				B84081102C55F71B0030EE70 /* ContentView.swift in Sources */,
 				B84081292C562D520030EE70 /* TabController.swift in Sources */,
 				B840812D2C562DAA0030EE70 /* BrowseTabView.swift in Sources */,
@@ -352,11 +384,15 @@
 				B84081272C562C9F0030EE70 /* TabItem.swift in Sources */,
 				B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */,
 				B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */,
+				B84081712C5640930030EE70 /* URL+Extensions.swift in Sources */,
 				B840812B2C562D8B0030EE70 /* DealsTabView.swift in Sources */,
 				B84081342C562EBD0030EE70 /* NavigationCoordinator.swift in Sources */,
 				B84081682C563AE40030EE70 /* Font+Extensions.swift in Sources */,
+				B84081782C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift in Sources */,
+				B84081752C5641DF0030EE70 /* DeeplinkRegexMatcher.swift in Sources */,
 				B84081232C562C000030EE70 /* TabItemLabel.swift in Sources */,
 				B840813C2C56312C0030EE70 /* ListController.swift in Sources */,
+				B840816F2C563E810030EE70 /* Deeplink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

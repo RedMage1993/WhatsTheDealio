@@ -12,6 +12,7 @@
 		B84081122C55F7230030EE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84081112C55F7230030EE70 /* Assets.xcassets */; };
 		B84081152C55F7230030EE70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84081142C55F7230030EE70 /* Preview Assets.xcassets */; };
 		B840811D2C55F9840030EE70 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B840811C2C55F9840030EE70 /* Networking */; };
+		B84081212C562A8C0030EE70 /* Boostrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081202C562A8C0030EE70 /* Boostrap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		B840810F2C55F71B0030EE70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B84081112C55F7230030EE70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84081142C55F7230030EE70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B84081202C562A8C0030EE70 /* Boostrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boostrap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				B840810D2C55F71B0030EE70 /* WhatsTheDealioApp.swift */,
 				B840810F2C55F71B0030EE70 /* ContentView.swift */,
 				B84081112C55F7230030EE70 /* Assets.xcassets */,
+				B840811F2C562A810030EE70 /* ViewModifiers */,
 				B84081132C55F7230030EE70 /* Preview Content */,
 			);
 			path = WhatsTheDealio;
@@ -67,6 +70,14 @@
 				B84081142C55F7230030EE70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B840811F2C562A810030EE70 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B84081202C562A8C0030EE70 /* Boostrap.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84081102C55F71B0030EE70 /* ContentView.swift in Sources */,
+				B84081212C562A8C0030EE70 /* Boostrap.swift in Sources */,
 				B840810E2C55F71B0030EE70 /* WhatsTheDealioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

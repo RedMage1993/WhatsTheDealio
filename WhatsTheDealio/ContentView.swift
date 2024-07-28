@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(TabController.self) private var tabController
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(
+            selection: Binding {
+                tabController.selectedTab
+            } set: { newValue in
+                tabController.selectedTab = newValue
+                tabController.tabItemTappedSubject.send(newValue)
+            }
+        ) {
+            ForEach(tabController.tabItems) {
+                tabController.tabView(for: $0)
+                    .tag($0)
+            }
         }
-        .padding()
     }
 }
 

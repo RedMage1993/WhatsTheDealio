@@ -14,6 +14,16 @@
 		B840811D2C55F9840030EE70 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B840811C2C55F9840030EE70 /* Networking */; };
 		B84081212C562A8C0030EE70 /* Boostrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081202C562A8C0030EE70 /* Boostrap.swift */; };
 		B84081232C562C000030EE70 /* TabItemLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081222C562C000030EE70 /* TabItemLabel.swift */; };
+		B84081272C562C9F0030EE70 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081262C562C9F0030EE70 /* TabItem.swift */; };
+		B84081292C562D520030EE70 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081282C562D520030EE70 /* TabController.swift */; };
+		B840812B2C562D8B0030EE70 /* DealsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840812A2C562D8B0030EE70 /* DealsTabView.swift */; };
+		B840812D2C562DAA0030EE70 /* BrowseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840812C2C562DAA0030EE70 /* BrowseTabView.swift */; };
+		B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840812E2C562E140030EE70 /* TabNavigationStackView.swift */; };
+		B84081342C562EBD0030EE70 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081332C562EBD0030EE70 /* NavigationCoordinator.swift */; };
+		B84081362C562ED70030EE70 /* NavigationDestinationViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081352C562ED70030EE70 /* NavigationDestinationViewFactory.swift */; };
+		B84081382C562F170030EE70 /* TabNavigationDestinationViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081372C562F170030EE70 /* TabNavigationDestinationViewFactory.swift */; };
+		B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081392C562F220030EE70 /* TabNavigationDestination.swift */; };
+		B840813C2C56312C0030EE70 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840813B2C56312C0030EE70 /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		B84081142C55F7230030EE70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B84081202C562A8C0030EE70 /* Boostrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boostrap.swift; sourceTree = "<group>"; };
 		B84081222C562C000030EE70 /* TabItemLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemLabel.swift; sourceTree = "<group>"; };
+		B84081262C562C9F0030EE70 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		B84081282C562D520030EE70 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		B840812A2C562D8B0030EE70 /* DealsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTabView.swift; sourceTree = "<group>"; };
+		B840812C2C562DAA0030EE70 /* BrowseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTabView.swift; sourceTree = "<group>"; };
+		B840812E2C562E140030EE70 /* TabNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationStackView.swift; sourceTree = "<group>"; };
+		B84081332C562EBD0030EE70 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		B84081352C562ED70030EE70 /* NavigationDestinationViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationViewFactory.swift; sourceTree = "<group>"; };
+		B84081372C562F170030EE70 /* TabNavigationDestinationViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationDestinationViewFactory.swift; sourceTree = "<group>"; };
+		B84081392C562F220030EE70 /* TabNavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationDestination.swift; sourceTree = "<group>"; };
+		B840813B2C56312C0030EE70 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,8 @@
 				B840810D2C55F71B0030EE70 /* WhatsTheDealioApp.swift */,
 				B840810F2C55F71B0030EE70 /* ContentView.swift */,
 				B84081112C55F7230030EE70 /* Assets.xcassets */,
+				B84081312C562E8E0030EE70 /* Utilities */,
+				B84081242C562C780030EE70 /* Views */,
 				B840811F2C562A810030EE70 /* ViewModifiers */,
 				B84081132C55F7230030EE70 /* Preview Content */,
 			);
@@ -81,6 +103,54 @@
 				B84081222C562C000030EE70 /* TabItemLabel.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		B84081242C562C780030EE70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B84081252C562C880030EE70 /* TabBar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B84081252C562C880030EE70 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B84081302C562E2B0030EE70 /* Tabs */,
+				B84081262C562C9F0030EE70 /* TabItem.swift */,
+				B84081282C562D520030EE70 /* TabController.swift */,
+				B840812E2C562E140030EE70 /* TabNavigationStackView.swift */,
+				B84081372C562F170030EE70 /* TabNavigationDestinationViewFactory.swift */,
+				B84081392C562F220030EE70 /* TabNavigationDestination.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B84081302C562E2B0030EE70 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				B840812A2C562D8B0030EE70 /* DealsTabView.swift */,
+				B840812C2C562DAA0030EE70 /* BrowseTabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		B84081312C562E8E0030EE70 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B84081322C562EB00030EE70 /* Helpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B84081322C562EB00030EE70 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B84081332C562EBD0030EE70 /* NavigationCoordinator.swift */,
+				B84081352C562ED70030EE70 /* NavigationDestinationViewFactory.swift */,
+				B840813B2C56312C0030EE70 /* ListController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +229,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84081382C562F170030EE70 /* TabNavigationDestinationViewFactory.swift in Sources */,
 				B84081102C55F71B0030EE70 /* ContentView.swift in Sources */,
+				B84081292C562D520030EE70 /* TabController.swift in Sources */,
+				B840812D2C562DAA0030EE70 /* BrowseTabView.swift in Sources */,
 				B84081212C562A8C0030EE70 /* Boostrap.swift in Sources */,
 				B840810E2C55F71B0030EE70 /* WhatsTheDealioApp.swift in Sources */,
+				B84081362C562ED70030EE70 /* NavigationDestinationViewFactory.swift in Sources */,
+				B84081272C562C9F0030EE70 /* TabItem.swift in Sources */,
+				B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */,
+				B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */,
+				B840812B2C562D8B0030EE70 /* DealsTabView.swift in Sources */,
+				B84081342C562EBD0030EE70 /* NavigationCoordinator.swift in Sources */,
 				B84081232C562C000030EE70 /* TabItemLabel.swift in Sources */,
+				B840813C2C56312C0030EE70 /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

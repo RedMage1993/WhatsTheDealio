@@ -51,6 +51,9 @@
 		B84081782C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */; };
 		B840817A2C5645210030EE70 /* DisabledRedirectURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081792C5645210030EE70 /* DisabledRedirectURLSession.swift */; };
 		B840817D2C5648D20030EE70 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840817C2C5648D20030EE70 /* CachedAsyncImage.swift */; };
+		B84081812C564CF10030EE70 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081802C564CF10030EE70 /* Services.swift */; };
+		B84081842C564E630030EE70 /* DefaultRequestBaseURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081822C564E630030EE70 /* DefaultRequestBaseURLProvider.swift */; };
+		B84081852C564E630030EE70 /* DefaultRequestMetadataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84081832C564E630030EE70 /* DefaultRequestMetadataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +102,9 @@
 		B84081772C5642110030EE70 /* DealDetailDeeplinkRegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailDeeplinkRegexMatcher.swift; sourceTree = "<group>"; };
 		B84081792C5645210030EE70 /* DisabledRedirectURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledRedirectURLSession.swift; sourceTree = "<group>"; };
 		B840817C2C5648D20030EE70 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
+		B84081802C564CF10030EE70 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		B84081822C564E630030EE70 /* DefaultRequestBaseURLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRequestBaseURLProvider.swift; sourceTree = "<group>"; };
+		B84081832C564E630030EE70 /* DefaultRequestMetadataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRequestMetadataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 				B840810F2C55F71B0030EE70 /* ContentView.swift */,
 				B84081112C55F7230030EE70 /* Assets.xcassets */,
 				B84081642C563A2E0030EE70 /* Info.plist */,
+				B840817F2C564CDC0030EE70 /* Services */,
 				B84081512C56398A0030EE70 /* Fonts */,
 				B84081312C562E8E0030EE70 /* Utilities */,
 				B84081242C562C780030EE70 /* Views */,
@@ -292,6 +299,16 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		B840817F2C564CDC0030EE70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B84081822C564E630030EE70 /* DefaultRequestBaseURLProvider.swift */,
+				B84081832C564E630030EE70 /* DefaultRequestMetadataProvider.swift */,
+				B84081802C564CF10030EE70 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84081842C564E630030EE70 /* DefaultRequestBaseURLProvider.swift in Sources */,
+				B84081852C564E630030EE70 /* DefaultRequestMetadataProvider.swift in Sources */,
 				B84081382C562F170030EE70 /* TabNavigationDestinationViewFactory.swift in Sources */,
 				B840816C2C563E5B0030EE70 /* DeeplinkManager.swift in Sources */,
 				B84081102C55F71B0030EE70 /* ContentView.swift in Sources */,
@@ -399,6 +418,7 @@
 				B840817D2C5648D20030EE70 /* CachedAsyncImage.swift in Sources */,
 				B84081272C562C9F0030EE70 /* TabItem.swift in Sources */,
 				B840812F2C562E140030EE70 /* TabNavigationStackView.swift in Sources */,
+				B84081812C564CF10030EE70 /* Services.swift in Sources */,
 				B840813A2C562F220030EE70 /* TabNavigationDestination.swift in Sources */,
 				B84081712C5640930030EE70 /* URL+Extensions.swift in Sources */,
 				B840812B2C562D8B0030EE70 /* DealsTabView.swift in Sources */,

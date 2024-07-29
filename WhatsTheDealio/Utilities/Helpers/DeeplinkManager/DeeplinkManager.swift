@@ -63,16 +63,16 @@ class DeeplinkManager {
     actor Consumer {
         var consumptionTasks: [Task<Bool, Never>] = []
 
-        func consumeDeeplink(_ deepLink: inout Deeplink?, consumption: @escaping (Deeplink) async -> Bool) async {
+        func consumeDeeplink(_ deeplink: inout Deeplink?, consumption: @escaping (Deeplink) async -> Bool) async {
             for task in consumptionTasks {
                 guard await task.value else { continue }
                 return
             }
 
-            guard let validDeepLink = deepLink else { return }
+            guard let validDeeplink = deeplink else { return }
 
             let newTask = Task {
-                await consumption(validDeepLink)
+                await consumption(validDeeplink)
             }
 
             consumptionTasks.append(newTask)
@@ -81,7 +81,7 @@ class DeeplinkManager {
 
             guard await newTask.value else { return }
 
-            deepLink = nil
+            deeplink = nil
         }
     }
 }

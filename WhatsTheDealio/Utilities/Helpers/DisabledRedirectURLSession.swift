@@ -9,11 +9,11 @@ import Foundation
 
 class DisabledRedirectURLSession: NSObject, URLSessionTaskDelegate {
     private let hostName: String
-    
+
     init(hostName: String) {
         self.hostName = hostName
     }
-    
+
     func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
         completionHandler(nil)
     }

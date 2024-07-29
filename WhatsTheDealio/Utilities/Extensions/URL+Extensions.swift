@@ -18,7 +18,7 @@ extension URL {
 
         return components.url ?? self
     }
-    
+
     enum RedirectCheckError: Error {
         case noResponse
         case redirectionNotFound

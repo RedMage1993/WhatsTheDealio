@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(TabController.self) private var tabController
-    
+
     var body: some View {
         TabView(
             selection: Binding {

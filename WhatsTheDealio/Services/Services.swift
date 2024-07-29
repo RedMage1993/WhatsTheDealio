@@ -14,7 +14,7 @@ final class Services {
     private let requestBaseURLProvider: RequestBaseURLProvider
     private let metadataProvider: RequestMetadataProvider
     private let requestBuilder: RequestBuilder
-    
+
     let networking: Networking
 
     private init() {

@@ -22,17 +22,32 @@ struct CachedAsyncImage<Content: View, Placeholder: View>: View {
     }
 
     var body: some View {
-        if let image {
-            content(Image(uiImage: image))
-        } else {
+        ZStack {
             placeholder
-                .task {
-                    guard let url,
-                          let (data, _) = try? await URLSession.shared.data(from: url)
-                    else { return }
 
-                    image = UIImage(data: data)
-                }
+            if let image {
+                content(Image(uiImage: image))
+            }
+        }
+        .onAppear {
+            guard image == nil else { return }
+            loadImage()
+        }
+        .onChange(of: url) {
+            loadImage()
+        }
+    }
+
+    func loadImage() {
+        Task {
+            guard let url,
+                  let (data, _) = try? await URLSession.shared.data(from: url),
+                  let image = UIImage(data: data)
+            else { return }
+
+            await MainActor.run {
+                self.image = image
+            }
         }
     }
 }
